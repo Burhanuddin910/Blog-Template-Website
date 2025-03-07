@@ -26,6 +26,8 @@ header
 {
     font-size: 1.5rem;
     color: black;
+    display: none;
+    text-decoration: none;
 }
 .hero-section
 {
@@ -193,6 +195,10 @@ header
 {
     padding: 4rem;
 }
+.faster-loading
+{
+    margin-bottom: 4rem;
+}
 .secure-platform , .Reliable-hosting, .faster-loading
 {
     border-top: 1px solid black;
@@ -201,6 +207,40 @@ header
 .secure-platform p , .Reliable-hosting p, .faster-loading p
 {
     max-width: 400px;
+}
+.nav-links , .profile
+{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.1rem;
+    font-family: "Wix Madefor Display", sans-serif;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    margin-left: 3rem;
+}
+.nav-links a , .profile a
+{
+    text-decoration: none;
+    color: black;
+    transition: all 0.15s;
+}
+.nav-links a:hover , .profile a:hover
+{
+    color: black;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.profile button
+{
+    padding: 1rem 2.2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: rgb(22,106,234);
+    color: white;
+    font-family: "Wix Madefor Display", sans-serif;
 }
 footer
 {
@@ -247,7 +287,35 @@ footer
     color: black;
 }
 
-@media screen and (min-width: 520px)
+@media screen and (max-width: 1200px)
 {
-    
+    .nav-links
+    {
+        display: none;
+    }
+    #hamburger-menu
+    {
+        display: block;
+        text-decoration: none;
+    }
+    .profile
+    {
+        display: none;
+    }
+}
+@media screen and (min-width: 1200px)
+{
+    .menu
+    {
+        display: inline-block;
+    }
+}
+@media screen and (max-width: 1000px)
+{
+    .features{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
 }
