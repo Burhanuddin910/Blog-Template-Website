@@ -27,6 +27,9 @@ header
     font-size: 1.5rem;
     color: black;
     display: none;
+}
+.menu a
+{
     text-decoration: none;
 }
 .hero-section
